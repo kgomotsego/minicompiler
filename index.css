@@ -1,0 +1,63 @@
+h1 {
+    
+    color:darkslateblue;
+    font-family: cursive;
+    text-align: center;
+    padding-bottom: 0px;
+    font-size: 325%;
+    font-kerning: auto;
+    font-style: oblique;
+    text-decoration: inherit;
+    text-decoration-style: wavy;
+    text-decoration-color: chocolate;
+    text-transform: inherit;
+    font-variant-east-asian: normal;
+}
+
+body {
+    
+    background-color: azure;
+    
+}
+
+h2 {
+    
+    padding-top: 0px;
+    text-align: center;
+    color: cadetblue;
+    font-family: courier;
+    font-size: 250%;
+    background-color: aqua;
+    
+}
+
+h3, hover {
+    
+    color:blue;
+    
+}
+
+p, .paragraph {
+    
+    text-align: center;
+    
+    font-size: 25px;
+    
+}
+
+#container{
+    
+    text-align: center;
+    align-content: center;
+    border: 10%;
+    border-color: aqua;
+    
+    
+}
+
+#bottom{
+    
+    background-color: burlywood;
+    text-align: center;
+    
+}

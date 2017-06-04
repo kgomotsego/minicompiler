@@ -1,0 +1,110 @@
+<html>
+<head>
+    
+    <title> Braze Mini Compiler</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    </head>
+
+    <h1 align="center"><img src="logo.png" height="12%" weight="20%"/>BRAZE MINI COMPILER<img src="logo.png" height="12%" weight="20%"/>    </h1>
+
+<body>
+    
+    <h2>World of Modern compilers</h2>
+    
+    <p class="paragraph">"This is product of the Braze company developed M.K. Africa and K.F. Josephs.</p>
+    <p class="paragraph">MJ Blue was also involved at a later stage of the development. </p>
+    <p class="paragraph">The language dominating in the mini compiler is pascal.</p>
+    <p class="paragraph">Basic assembly x86 was included in some of the procedures.</p>
+    <p class="paragraph">The mini compiler was inspired by the great Julian Pareshki</p>
+    <p class="paragraph">from France who built the first open-Source compiler.</p>
+    <p class="paragraph">The Braze Mini Compiler is also open-source"</p>
+    
+    <div id="container">
+    
+    
+    <img src="pic%201.jpg" />
+        <p align="center"><strong>Figure 1</strong></p>
+        <p>The procedure GetChar allows the program to read new character from the input stream.</p>
+        <p>The procedure Error will check the data type in its argument, if the data type</p>
+        <p>entered is not a string then the program will display an error. The Abort procedure </p>
+        <p>stops the current processing once the error is found.</p>
+    
+    
+    <img src="pic%202.jpg" />
+        <p align="center"><strong>Figure 2</strong></p>    
+        <p>The procedure Expected reports what was expected. The Match procedure will match the</p>
+        <p>specific input character to the program. The function IsAlpha will allow the program</p>
+        <p>to recognize uppercase characters. The function IsDigit will allow the program to recognize digits.
+        </p>
+        
+    <img src="pic%203.jpg" />
+        <p align="center"><strong>Figure 3</strong></p> 
+        <p>In the function GetName ,the condition statement ” if not IsDigit(Look) then Expected</p>
+        <p>    (‘Name’) “ tells the user to enter a digit and <p>if not then the program will tell </p>
+        <p>    the user that a name is expected. In the function GetName, the condition statement “if </p>
+        <p>   not IsDigit(Look) then Expected (‘Integer’) tells the user to enter a digit and if </p>
+        <p>  not then the program will tell the user that an integer is expected.  The procedure </p>
+        <p>  Emit produces an output string without moving the cursor to the next line. The </p>
+        <p>  procedure EmitLn will produce an output string and move the cursor to the next line. </p>
+        
+        
+        
+    <img src="pic%204.jpg" />
+        <p align="center"><strong>Figure 4</strong></p> 
+        <p>    In the procedure Term, the functions Match ( ‘(‘ ) and Match ( ‘)‘ ) have been added to</p> 
+        <p>    enable the program to recognize parentheses in an expression. In the procedure Add, </p>
+        <p>    procedure Match is called to look for “+” in any expression that may be input. Procedure</p>
+        <p>    Term then moves the first digit to D0 and the procedure expression moves contents of</p>
+        <p>    register D0 to D1. The Add procedure will then add the contents of registers D1 and D0 </p>
+        <p>    where the D1 contains the second number to be added. In the procedure Subtract, </p>
+        <p>    procedure Match is called to look for “-” in any expression that may be input. </p>
+        <p>    Procedure Term then moves the first digit to D0 and the procedure expression moves</p>
+        <p>    contents of register D0 to D1. The Subtract procedure will then add the contents of</p>
+        <p>    registers D1 and D0 where the D1 contains the second number to be subtracted. </p>
+        
+        
+        
+     <img src="pic%205.jpg" />
+        <p align="center"><strong>Figure 5</strong></p>
+        <p>In the procedure Divide, procedure Match is called to look for “/” in any expression</p>
+        <p>    that may be input. Procedure Term then moves the first digit to D0 and the procedure </p>
+        <p>    expression moves contents of register D0 to D1. The following digit after the division </p>
+        <p>    operator is then moved to D1 and the procedure Divide finally divides the contents of </p>
+        <p>    register D1 by the contents of register D0. In the procedure Multiply, procedure  </p>
+        <p>    is called to look for “*” in any expression that may be input. The procedure Term will </p>
+        <p>    move the first recognized digit to register D0, the Multiply procedure will then multiply </p>
+        <p>    the contents of registers D1 and D0 where the D1 contains the second number to be </p>
+        <p>    multiplied. The procedure Expression can recognize math operators and call necessary </p>
+        <p>    procedures (line 176-179) for recognition and translation of general expressions. The </p>
+        <p>    procedure Expression contains a loop structure (line 173) which allows the procedure to </p>
+        <p>    check for more than one math operator. The procedure only recognizes +, -, * and / </p>
+        <p>    (line 173) since their procedures are defined as shown in figures 4 and 5. The procedure </p>
+        <p>    has a line of code that that will send an error message when no math operator is </p>
+        <p>    not found (Line 180).
+        </p>
+        
+        
+        <img src="pic%206.jpg" />
+        <p align="center"><strong>Figure 6</strong></p>
+        <p>The init procedure will load the whole program
+        
+        </p>
+        
+        <p></p>
+        
+        
+    </div>
+    
+    <div id="bottom">
+    
+    <p>The Braze Mini compiler is open- source, the following is a link where you can access the source code </p>
+    <a href="https://github.com/kgomotsego/minicompiler.git">The Open Source Code</a>
+    
+    </div>
+    
+    </body>
+
+    
+</html>
+
